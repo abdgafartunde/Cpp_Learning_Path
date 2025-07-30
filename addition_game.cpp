@@ -38,7 +38,7 @@ int main() {
 }
 
 bool playAdditionRound() {
-    const int MAX_NUM = 100; 
+    const int MAX_NUM = 50; 
     int num1 = (rand() % MAX_NUM) + 1; // Random number between 1 and 100
     int num2 = (rand() % MAX_NUM) + 1; // Random number between 1 and 100
     int correctAnswer = num1 + num2;
