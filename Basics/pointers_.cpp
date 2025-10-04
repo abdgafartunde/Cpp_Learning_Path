@@ -1,6 +1,22 @@
 #include <iostream>
 
 void basicPointerExample() {
+    /*
+    This function demonstrates the basics of pointers in C++.
+    It covers: 
+    - pointer declaration, 
+    - initialization, 
+    - dereferencing, and 
+    - the concept of nullptr.
+
+    Pointers are variables that store memory addresses of other variables.
+    They are powerful tools for dynamic memory management,
+    efficient array handling, and for implementing data structures like linked lists.
+
+    Note: Dereferencing a nullptr leads to undefined behavior (usually a crash).
+    
+
+    */
     std::cout << "--- Step 1: Pointers - The Foundation ---" << std::endl;
 
     int score = 100; // A regular integer variable
