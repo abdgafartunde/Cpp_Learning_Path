@@ -32,11 +32,16 @@ int main() {
     for (size_t i = 0; i < array_size; ++i) {
         arr_ptr[i] = static_cast<double>(i) * 1.1; // Initialize array elements
     }
+
     std::cout << "Dynamically allocated array of doubles: ";
     for (size_t i = 0; i < array_size; ++i) {
         std::cout << arr_ptr[i] << " ";
     }
     std::cout << std::endl;
+
+    std::cout << "Size of the array: " << sizeof(arr_ptr[0]) << std::endl;
+    std::cout << "Total memory allocated for array: " << sizeof(arr_ptr[0]) * array_size << " bytes" << std::endl;
+    std::cout << "Length of the array: " << sizeof(arr_ptr) / sizeof(arr_ptr[0]) << std::endl;
 
     // Step 4: Deallocate the array memory
     delete[] arr_ptr; // Use 'delete[]' for arrays
